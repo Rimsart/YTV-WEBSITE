@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y-TV | Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+     <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Y-TV Logo" onerror="this.style.display='none'">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="get-involved.html" class="btn btn-primary">Join YTV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+         <!-- Image Slideshow -->
+    <section class="slideshow-container">
+        
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('images/slide1.jpg');">
+            <div class="slide-content">
+                <h1>Empowering Youth.<br>Transforming Communities.</h1>
+                <a href="get-involved.html" class="btn btn-primary">Join the Movement</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('images/slide2.jpg');">
+            <div class="slide-content">
+                <h1>Innovating for a <span class="green-text">Prosperous Kenya</span></h1>
+                <a href="pillars.html" class="btn btn-secondary">Explore Our Pillars</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('images/slide3.jpg');">
+            <div class="slide-content">
+                <h1>Uniting All 47 Counties<br>Toward <span class="red-text">Vision 2060</span></h1>
+                <a href="about.html" class="btn btn-primary">Learn About Us</a>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide" style="background-image: url('images/slide4.jpg');">
+            <div class="slide-content">
+                <h1>Grassroots <span class="green-text">Innovation</span></h1>
+                <a href="get-involved.html" class="btn btn-secondary">Get Involved Today</a>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide" style="background-image: url('images/slide5.jpg');">
+            <div class="slide-content">
+                <h1>Building a <span class="red-text">Better Future</span><br>Together</h1>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Navigation Dots (5 dots now) -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </section>
+
+         <!-- Featured Activities Section -->
+    <section class="container">
+        <h2 class="section-title">Featured Activities</h2>
+        <div class="news-grid">
+            
+            <!-- Activity 1 -->
+            <div class="news-card">
+                <!-- Make sure you have this image in your folder, or keep the URL -->
+                <img src="images/tech-bootcamp.jpg" alt="Tech Training" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop'">
+                <div class="news-card-content">
+                    <span class="date-badge" style="background: var(--kenyan-red); width: fit-content; padding: 5px 15px; border-radius: 20px; color: white; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px;">Programs</span>
+                    <h3>Digital Skills Bootcamp</h3>
+                    <p>Equipping 10,000 youth across the country with essential tech, coding, and innovation skills to prepare them for the digital economy.</p>
+                    <a href="programs.html" class="btn btn-primary" style="margin-top: 20px; text-align: center;">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="news-card">
+                <img src="images/coastal-cleanup.jpg" alt="Community Cleanup" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop'">
+                <div class="news-card-content">
+                    <span class="date-badge" style="background: var(--kenyan-green); width: fit-content; padding: 5px 15px; border-radius: 20px; color: white; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px;">Community</span>
+                    <h3>Coastal Clean-Up Drive</h3>
+                    <p>Uniting young people to take active charge of environmental sustainability and community upliftment in Mombasa and Kilifi counties.</p>
+                    <a href="programs.html" class="btn btn-secondary" style="margin-top: 20px; text-align: center;">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our 5 Pillars Section (With Dark Background) -->
+    <section class="pillars-section">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <h2 class="section-title">Our 5 Pillars</h2>
+            <div class="grid-5">
+                <div class="pillar-card">
+                    <i class="fa-solid fa-users red-text"></i>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Empowerment</h3>
+                    <p style="font-size: 0.9rem; color: #555;">Equipping young people with practical skills and actionable knowledge.</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fa-solid fa-lightbulb green-text"></i>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Innovation</h3>
+                    <p style="font-size: 0.9rem; color: #555;">Embracing forward-thinking creativity and digital solutions.</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fa-solid fa-handshake red-text"></i>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Collaboration</h3>
+                    <p style="font-size: 0.9rem; color: #555;">Believing in the synergistic power of strategic partnerships.</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fa-solid fa-bullseye green-text"></i>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Impact</h3>
+                    <p style="font-size: 0.9rem; color: #555;">Creating measurable, sustainable change in communities.</p>
+                </div>
+                <div class="pillar-card">
+                    <i class="fa-solid fa-chart-line red-text"></i>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Growth</h3>
+                    <p style="font-size: 0.9rem; color: #555;">Fostering continuous personal development and progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+        <h2 style="margin-bottom: 20px;">Y-TV</h2>
+        <p>Empowering Youth. Transforming Communities. Building Kenya 2060.</p>
+        <p>Email: info@ytv.or.ke | Phone: 0115320481</p>
+        <div style="margin-top: 20px;">
+            <a href="#" style="color: white; font-size: 1.5rem; margin: 0 10px;"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem; margin: 0 10px;"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem; margin: 0 10px;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem; margin: 0 10px;"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Y-TV. All Rights Reserved.
+        </div>
+        
+    </footer>
+
+            <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        let slideInterval;
+
+        function showSlides(n) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+            
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            
+            slides[slideIndex].classList.add("active");
+            dots[slideIndex].classList.add("active");
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlides(slideIndex);
+        }
+
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides(slideIndex);
+            resetTimer(); 
+        }
+
+        function startTimer() {
+            slideInterval = setInterval(nextSlide, 5000); // 5 seconds
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            startTimer();
+        }
+
+        startTimer();
+    </script>
+
+</body>
+</html>
